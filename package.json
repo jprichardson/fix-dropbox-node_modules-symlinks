@@ -1,0 +1,33 @@
+{
+  "name": "fix-dropbox-node_modules-symlinks",
+  "version": "0.0.0",
+  "description": "Fix symlinks in Dropbox node_modules bin folder.",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jprichardson/fix-dropbox-node_modules-symlinks.git"
+  },
+  "keywords": [
+    "dropbox"
+  ],
+  "author": "JP Richardson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jprichardson/fix-dropbox-node_modules-symlinks/issues"
+  },
+  "homepage": "https://github.com/jprichardson/fix-dropbox-node_modules-symlinks#readme",
+  "dependencies": {
+    "chalk": "^1.1.3"
+  },
+  "devDependencies": {
+    "standard": "^7.0.1"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "bin": {
+    "fix-dropbox-node_modules-symlinks": "./cli.js"
+  }
+}
