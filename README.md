@@ -22,6 +22,8 @@ all the rest, you have actual dereferenced files that don't work.
 Usage
 -----
 
+**Pause or turn off Dropbox on the machine you run this on.**
+
 ```
 
   fix-dropbox-node_modules-symlinks@0.1.0
