@@ -24,16 +24,16 @@ Usage
 
 **Pause or turn off Dropbox on the machine you run this on.**
 
+
+
+###Run on project source directory with package.json and node_modules.
+
+Options:
+`--overwrite` Overwrite existing symlinks.
+
+###Example command
 ```
-
-  fix-dropbox-node_modules-symlinks@0.1.0
-
-    Run on project source directory with package.json and node_modules.
-
-    options:
-
-      --overwrite Overwrite existing symlinks.
-
+fix-dropbox-node_modules-symlinks --overwrite
 ```
 
 

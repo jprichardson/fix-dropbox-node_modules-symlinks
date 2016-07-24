@@ -31,6 +31,7 @@ function main () {
   console.log('')
   fs.readdirSync(nodeModulesDir).forEach(mod => {
     if (mod === '.bin') return
+    if (mod === '.DS_Store') return; // ignore Mac OS folder attributes file (such as icon position)
     let pkgJson = JSON.parse(fs.readFileSync(path.join('node_modules', mod, 'package.json'), 'utf8'))
     if (!pkgJson.bin) return
 
