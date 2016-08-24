@@ -1,3 +1,19 @@
+UNRELEASED
+----------
+
+### Added
+
+### Removed
+
+### Breaking
+
+### Changed
+
+### Fixed
+
+### Maintenance
+
+
 0.1.2 / 2016-07-24
 ------------------
 - ignore Mac OS .DS_Store files
