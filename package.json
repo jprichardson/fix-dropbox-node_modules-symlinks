@@ -29,5 +29,8 @@
   ],
   "bin": {
     "fix-dropbox-node_modules-symlinks": "./cli.js"
+  },
+  "engines" : {
+    "node" : ">=6"
   }
 }

@@ -6,6 +6,7 @@ UNRELEASED
 ### Removed
 
 ### Breaking
+- Requires Node v6
 
 ### Changed
 
