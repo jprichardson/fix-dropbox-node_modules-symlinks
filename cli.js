@@ -5,7 +5,7 @@
 const chalk = require('chalk')
 const fs = require('fs')
 const path = require('path')
-const pkg = require('./package')
+const { version, name } = require('./package')
 const args = process.argv.slice(2)
 
 if (args[0] === '--help' || args[0] === '-h') showHelp()
@@ -60,7 +60,7 @@ function main () {
 
 function showHelp () {
   console.log('')
-  console.log(`  ${chalk.blue(pkg.name)}@${chalk.green(pkg.version)}`)
+  console.log(`  ${chalk.blue(name)}@${chalk.green(version)}`)
   console.log('')
   console.log(`    Run on project source directory with ${chalk.bold('package.json')} and ${chalk.bold('node_modules.')}`)
   console.log('')
@@ -71,5 +71,5 @@ function showHelp () {
 }
 
 function showVersion () {
-  console.log(pkg.version)
+  console.log(version)
 }
