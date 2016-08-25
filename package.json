@@ -1,6 +1,6 @@
 {
   "name": "fix-dropbox-node_modules-symlinks",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Fix symlinks in Dropbox node_modules bin folder.",
   "scripts": {
     "test": "standard"

@@ -6,14 +6,22 @@ UNRELEASED
 ### Removed
 
 ### Breaking
-- Requires Node v6
 
 ### Changed
 
 ### Fixed
-- Support for npm scoped modules
 
 ### Maintenance
+
+
+0.2.0 / 2016-08-25
+------------------
+
+### Breaking
+- Requires Node v6
+
+### Fixed
+- Support for npm scoped modules
 
 
 0.1.2 / 2016-07-24
