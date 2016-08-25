@@ -11,6 +11,7 @@ UNRELEASED
 ### Changed
 
 ### Fixed
+- Support for npm scoped modules
 
 ### Maintenance
 
