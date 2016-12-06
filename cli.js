@@ -33,11 +33,11 @@ function main () {
 
     if (!pkgJson.bin) return
 
-    Object.keys(pkgJson.bin).forEach(binName => {
+    const linkBin = (binName, relTarget) => {
       let p = path.join(nodeModulesBin, binName)
       let absP = path.join(cwd, p)
       let absPexists = fs.existsSync(absP)
-      let target = path.join(path.relative(nodeModulesBin, path.join(dir, mod)), pkgJson.bin[binName])
+      let target = path.join(path.relative(nodeModulesBin, path.join(dir, mod)), relTarget)
 
       if (absPexists && overwrite) fs.unlinkSync(absP)
       if (absPexists && !overwrite) return console.log(`  ${chalk.blue(p)} exists. Skipping.`)
@@ -47,7 +47,17 @@ function main () {
       process.chdir(cwd)
 
       console.log(`  ${chalk.green(target)} => ${chalk.blue(p)}`)
-    })
+    }
+
+    if (typeof pkgJson.bin === 'object') {
+      Object.keys(pkgJson.bin).forEach(binName => {
+        linkBin(binName, pkgJson.bin[binName])
+      })
+    } else if (typeof pkgJson.bin === 'string') {
+      linkBin(mod, pkgJson.bin)
+    } else {
+      console.error(chalk.red(`Unknown package.json bin type for module: ${mod}.`))
+    }
   }
 
   console.log('')
