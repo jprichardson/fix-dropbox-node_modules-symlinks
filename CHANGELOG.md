@@ -14,6 +14,13 @@ UNRELEASED
 ### Maintenance
 
 
+0.2.1 / 2016-12-06
+------------------
+
+### Fixed
+- Support for cases where `package.json` field `bin` is a `string` and not an `object`.
+
+
 0.2.0 / 2016-08-25
 ------------------
 
